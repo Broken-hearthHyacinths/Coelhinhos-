@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coelhos..𐔌՞. .՞𐦯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="link-bunny">
+        <img src="https://i.postimg.cc/26jpDSyq/bunny-bunny.png"
+             alt="Mewehehe"
+             class="coelhinhobobo">
+    </a>
+
+    <div id="popupTema" class="popup-overlay">
+        <div class="popup-conteudo">
+            <h2>Escolha o seu tema!</h2>
+            <p>Qual modo você quer?</p>
+
+            <div class="popup-opcoes">
+                <div class="opcao-card" onclick="escolherTemaInicial('light')">
+                    <img src="https://i.postimg.cc/fbLfXVHy/COOL-BUNNYYY.jpg"
+                         alt="Modo Claro">
+                    <span>Modo Claro</span>
+                </div>
+
+                <div class="opcao-card" onclick="escolherTemaInicial('dark')">
+                    <img src="https://i.postimg.cc/MHjB5RRM/SLEEPING-BUNNY.jpg"
+                         alt="Modo Escuro">
+                    <span>Modo Escuro</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>Coelhos fofos!!</h1>
+    </div>
+
+    <div class="toggle-theme-container">
+        <button id="themeToggleBtn"
+                onclick="alternarTema()"
+                aria-label="Mudar tema">
+
+            <img id="imgModoClaro"
+                 src="https://i.postimg.cc/fbLfXVHy/COOL-BUNNYYY.jpg"
+                 alt="Modo Claro"
+                 class="img-tema ativo">
+
+            <img id="imgModoEscuro"
+                 src="https://i.postimg.cc/MHjB5RRM/SLEEPING-BUNNY.jpg"
+                 alt="Modo Escuro"
+                 class="img-tema">
+        </button>
+    </div>
+
+    <div class="container-player">
+        <div class="disco-vinil"
+             id="disco"
+             onclick="alternarPlayPausa()">
+            <div class="centro-disco"></div>
+        </div>
+
+        <audio id="audio-player-1" src="musicas/track1.mp3"></audio>
+        <audio id="audio-player-2" src="musicas/track2.mp3"></audio>
+        <audio id="audio-player-3" src="musicas/track3.mp3"></audio>
+        <audio id="audio-player-4" src="musicas/track4.mp3"></audio>
+    </div>
+
+    <div class="caixa-fofa">
+
+        <h2>Bem-vindo ao espaço dedicado para nossos coelhos fofinhos! 𑣲₍ ᐢ. .ᐢ₎</h2>
+
+        <img src="https://i.postimg.cc/htJZV7zm/COELHINHIOOOOO.jpg"
+             alt="Magnum opus">
+
+        <h3>Sobre os coelhos</h3>
+
+        <p>
+            Os coelhos são pequenos mamíferos quadrúpedes e herbívoros
+            que pertencem à família dos leporídeos (Leporidae) e à
+            ordem dos lagomorfos (Lagomorpha). Eles se espalharam pelo
+            mundo todo e se adaptaram facilmente tanto à natureza quanto ao
+            convívio doméstico
+        </p>
+
+        <p>
+            Primeiro, vamos estabelecer as seguintes classificação e diferenças
+        </p>
+
+        <p>
+            Apesar de roerem vegetais, eles não são considerados roedores.
+            como dito anteriormente os coelhos pertencem à ordem Lagomorpha
+            e possuem quatro dentes na arcada superior, enquanto os roedores
+            têm apenas dois.
+        </p>
+
+        <p>
+            Os gêneros principais e mais conhecidos são o Oryctolagus
+            (que inclui o coelho-comum ou europeu, ancestral de todas as
+            raças domésticas) e o Sylvilagus (exclusivo das Américas, como o
+            tapiti brasileiro).
+        </p>
+
+        <p>
+            Os coelhos são diferentes das lebres! Os coelhos são menores que as lebres, possuem
+            orelhas mais curtas e vivem em colônias escavando tocas no subsolo.
+            Além disso, os filhotes de coelho nascem cegos e sem pelos, ao contrário das lebres. Pobres coelhinhos..
+        </p>
+
+
+    </div>
+
+    <div id="widgetJogo" class="widget-jogo">
+
+        <div class="widget-header" onclick="alternarWidget()">
+            <span>Está cansado de ler? (-ω-`)</span>
+            <span id="setaWidget">❀</span>
+        </div>
+
+        <div id="widgetCorpo" class="widget-corpo">
+
+            <div id="score">Pontos: 0</div>
+
+            <p class="instrucao-jogo">
+                Clique ou aperte espaço ou para pular!
+            </p>
+
+            <canvas id="gameCanvas"
+                    width="240"
+                    height="240">
+            </canvas>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
